@@ -1,13 +1,15 @@
 "use client";
 
 import { Separator } from "@/components/ui/separator"
-import { MailOpen, Search, Map, Linkedin, BookOpenText, Tv, Youtube, ShoppingCart } from "lucide-react"
+import { MailOpen, Search, Map, Linkedin, BookOpenText, Tv, Youtube, ShoppingCart, Code, Github } from "lucide-react"
 import LinkItemList from "@/components/linkItemsList";
 import { BingImage } from "@/components/bingImage";
 
 const googleItems = [
   { title: 'Google', url: 'https://google.com', icon: <Search/> },
-  { title: 'GoogleMap', url: 'https://maps.google.com', icon: <Map/> },
+  { title: 'GoogleMap', url: 'https://maps.google.com', icon: <Map /> },
+  { title: 'Leetcode', url: 'https://leetcode.cn/problemset/', icon: <Code /> },
+  { title: 'GitHub', url: 'https://github.com/Takusei', icon: <Github /> },
 ]
 
 const socialItems = [
