@@ -5,7 +5,8 @@
   "homepage": "https://Takusei.github.io/browser-home",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "export": "next export",
+    "deploy": "npm run build && gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
