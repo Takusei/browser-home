@@ -37,7 +37,7 @@ const videoItems = [
 ]
 
 const shoppingItems = [
-  { title: '亚马逊', url: 'https://amazon.com', icon: <ShoppingCart /> },
+  { title: '亚马逊', url: 'https://www.amazon.co.jp/', icon: <ShoppingCart /> },
   { title: 'Mercari', url: 'https://jp.mercari.com/', icon: <ShoppingCart /> },
   { title: '乐天市场', url: 'https://rakuten.co.jp', icon: <ShoppingCart /> },
   { title: '淘宝', url: 'https://taobao.com', icon: <ShoppingCart /> },
