@@ -32,25 +32,25 @@ const videoItems = [
 ]
 
 const shoppingItems = [
-  { title: 'Amazon', url: 'https://amazon.com', icon: <ShoppingCart /> },
+  { title: '亚马逊', url: 'https://amazon.com', icon: <ShoppingCart /> },
   { title: 'Mercari', url: 'https://jp.mercari.com/', icon: <ShoppingCart /> },
-  { title: 'Rakuten', url: 'https://rakuten.co.jp', icon: <ShoppingCart /> },
-  { title: 'Taobao', url: 'https://taobao.com', icon: <ShoppingCart /> },
+  { title: '乐天市场', url: 'https://rakuten.co.jp', icon: <ShoppingCart /> },
+  { title: '淘宝', url: 'https://taobao.com', icon: <ShoppingCart /> },
 ]
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <LinkItemList items={googleItems} />
+        <LinkItemList category={'常用'} items={googleItems} />
         <Separator />
-        <LinkItemList items={socialItems} />
+        <LinkItemList category={'社交'} items={socialItems} />
         <Separator />
-        <LinkItemList items={videoItems} />
+        <LinkItemList category={'动画'} items={videoItems} />
         <Separator />
-        <LinkItemList items={comicItems} />
+        <LinkItemList category={'漫画'} items={comicItems} />
         <Separator />
-        <LinkItemList items={shoppingItems} />
+        <LinkItemList category={'购物'} items={shoppingItems} />
       </main>
     </div>
   );
