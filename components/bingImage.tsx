@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
-export function AspectRatioDemo() {
+export function BingImage() {
   const [imageUrl, setImageUrl] = useState<string | null>(null);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export function AspectRatioDemo() {
   }, []);
 
   return (
-    <AspectRatio ratio={16 / 9} className="bg-muted">
+    <AspectRatio ratio={16 / 7} className="bg-muted">
       {imageUrl ? (
         <Image
           src={imageUrl}
