@@ -1,22 +1,25 @@
 "use client";
 
 import { Separator } from "@/components/ui/separator"
-import { MailOpen, Search, Map, Linkedin, BookOpenText, Tv, Youtube, ShoppingCart, Code, Github } from "lucide-react"
+import { BookOpenText, Tv, Youtube, ShoppingCart} from "lucide-react"
 import LinkItemList from "@/components/linkItemsList";
 import { BingImage } from "@/components/bingImage";
 import GoogleSearch from "@/components/googleSearch";
+import { FcGoogle } from "react-icons/fc";
+import { SiGooglemaps, SiLeetcode, SiGmail, SiLinkedin, SiTencentqq, SiAmazon, SiRakuten, SiTaobao, SiBilibili } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
 
 const googleItems = [
-  { title: 'Google', url: 'https://google.com', icon: <Search/> },
-  { title: 'GoogleMap', url: 'https://maps.google.com', icon: <Map /> },
-  { title: 'Leetcode', url: 'https://leetcode.cn/problemset/', icon: <Code /> },
-  { title: 'GitHub', url: 'https://github.com/Takusei', icon: <Github /> },
+  { title: 'Google', url: 'https://google.com', icon: <FcGoogle/> },
+  { title: 'GoogleMap', url: 'https://maps.google.com', icon: <SiGooglemaps /> },
+  { title: 'Leetcode', url: 'https://leetcode.cn/problemset/', icon: <SiLeetcode /> },
+  { title: 'GitHub', url: 'https://github.com/Takusei', icon: <FaGithub /> },
 ]
 
 const socialItems = [
-  { title: 'Gmail', url: 'https://gmail.com', icon: <MailOpen /> },
-  { title: 'LinkedIn', url: 'https://linkedin.com', icon: <Linkedin /> },
-  { title: 'QQ-Mail', url: 'https://mail.qq.com', icon: <MailOpen /> },
+  { title: 'Gmail', url: 'https://gmail.com', icon: <SiGmail /> },
+  { title: 'LinkedIn', url: 'https://linkedin.com', icon: <SiLinkedin /> },
+  { title: 'QQ-Mail', url: 'https://mail.qq.com', icon: <SiTencentqq /> },
 ]
 
 const comicItems = [
@@ -29,7 +32,7 @@ const comicItems = [
 ]
 
 const videoItems = [
-  { title: 'Bilibili', url: 'https://bilibili.com', icon: <Tv /> },
+  { title: 'Bilibili', url: 'https://bilibili.com', icon: <SiBilibili /> },
   { title: 'YouTube', url: 'https://youtube.com', icon: <Youtube /> },
   { title: '风车动漫', url: 'https://www.dmla7.com/type/ribendongman.html', icon: <Tv /> },
   { title: '动漫迷', url: 'https://gimy.tv/', icon: <Tv /> },
@@ -38,10 +41,10 @@ const videoItems = [
 ]
 
 const shoppingItems = [
-  { title: '亚马逊', url: 'https://www.amazon.co.jp/', icon: <ShoppingCart /> },
+  { title: '亚马逊', url: 'https://www.amazon.co.jp/', icon: <SiAmazon /> },
   { title: 'Mercari', url: 'https://jp.mercari.com/', icon: <ShoppingCart /> },
-  { title: '乐天市场', url: 'https://rakuten.co.jp', icon: <ShoppingCart /> },
-  { title: '淘宝', url: 'https://taobao.com', icon: <ShoppingCart /> },
+  { title: '乐天市场', url: 'https://rakuten.co.jp', icon: <SiRakuten /> },
+  { title: '淘宝', url: 'https://taobao.com', icon: <SiTaobao /> },
 ]
 
 export default function Home() {
