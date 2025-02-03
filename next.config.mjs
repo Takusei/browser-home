@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["www.bing.com"], // Add Bing's domain for external images
+    domains: ["www.bing.com", "www.google.com"], // Add Bing's domain for external images
   },
 };
 

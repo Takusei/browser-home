@@ -1,49 +1,46 @@
 "use client";
 
 import { Separator } from "@/components/ui/separator"
-import { BookOpenText, Tv, Youtube, ShoppingCart} from "lucide-react"
 import LinkItemList from "@/components/linkItemsList";
 import { BingImage } from "@/components/bingImage";
 import GoogleSearch from "@/components/googleSearch";
-import { FcGoogle } from "react-icons/fc";
-import { SiGooglemaps, SiLeetcode, SiGmail, SiLinkedin, SiTencentqq, SiAmazon, SiRakuten, SiTaobao, SiBilibili } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
+import {  SiGmail, SiTaobao } from "react-icons/si";
 
 const googleItems = [
-  { title: 'Google', url: 'https://google.com', icon: <FcGoogle/> },
-  { title: 'GoogleMap', url: 'https://maps.google.com', icon: <SiGooglemaps /> },
-  { title: 'Leetcode', url: 'https://leetcode.cn/problemset/', icon: <SiLeetcode /> },
-  { title: 'GitHub', url: 'https://github.com/Takusei', icon: <FaGithub /> },
+  { title: 'Google', url: 'https://google.com' },
+  { title: 'Map', url: 'https://maps.google.com' },
+  { title: 'Leetcode', url: 'https://leetcode.cn/problemset/' },
+  { title: 'GitHub', url: 'https://github.com/Takusei' },
 ]
 
 const socialItems = [
   { title: 'Gmail', url: 'https://gmail.com', icon: <SiGmail /> },
-  { title: 'LinkedIn', url: 'https://linkedin.com', icon: <SiLinkedin /> },
-  { title: 'QQ-Mail', url: 'https://mail.qq.com', icon: <SiTencentqq /> },
+  { title: 'LinkedIn', url: 'https://linkedin.com'},
+  { title: 'QQ-Mail', url: 'https://mail.qq.com' },
 ]
 
 const comicItems = [
-  { title: 'ColaManga', url: 'https://colamanga.com', icon: <BookOpenText /> },
-  { title: '漫画柜', url: 'https://www.manhuagui.com/user/book/shelf', icon: <BookOpenText /> },
-  { title: '动漫之家', url: 'https://manhua.idmzj.com/', icon: <BookOpenText /> },
-  { title: 'Webtoon', url: 'https://www.webtoons.com', icon: <BookOpenText /> },
-  { title: 'Komiic', url: 'https://komiic.com/', icon: <BookOpenText /> },
-  { title: 'MangaDex', url: 'https://mangadex.org', icon: <BookOpenText /> },
+  { title: 'ColaManga', url: 'https://colamanga.com' },
+  { title: '漫画柜', url: 'https://www.manhuagui.com/user/book/shelf' },
+  { title: '动漫之家', url: 'https://manhua.idmzj.com/' },
+  { title: 'Webtoon', url: 'https://www.webtoons.com' },
+  { title: 'Komiic', url: 'https://komiic.com/' },
+  { title: 'MangaDex', url: 'https://mangadex.org' },
 ]
 
 const videoItems = [
-  { title: 'Bilibili', url: 'https://bilibili.com', icon: <SiBilibili /> },
-  { title: 'YouTube', url: 'https://youtube.com', icon: <Youtube /> },
-  { title: '风车动漫', url: 'https://www.dmla7.com/type/ribendongman.html', icon: <Tv /> },
-  { title: '动漫迷', url: 'https://gimy.tv/', icon: <Tv /> },
-  { title: '欧乐影院', url: 'https://www.olevod.com/', icon: <Tv /> },
-  { title: '斗鱼', url: 'https://www.douyu.com/directory/myFollow', icon: <Tv /> },
+  { title: 'Bilibili', url: 'https://bilibili.com'},
+  { title: 'YouTube', url: 'https://youtube.com'},
+  { title: '风车动漫', url: 'https://www.dmla7.com/type/ribendongman.html'},
+  { title: '动漫迷', url: 'https://gimy.tv/'},
+  { title: '欧乐影院', url: 'https://www.olevod.com/'},
+  { title: '斗鱼', url: 'https://www.douyu.com/directory/myFollow'},
 ]
 
 const shoppingItems = [
-  { title: '亚马逊', url: 'https://www.amazon.co.jp/', icon: <SiAmazon /> },
-  { title: 'Mercari', url: 'https://jp.mercari.com/', icon: <ShoppingCart /> },
-  { title: '乐天市场', url: 'https://rakuten.co.jp', icon: <SiRakuten /> },
+  { title: '亚马逊', url: 'https://www.amazon.co.jp/'},
+  { title: 'Mercari', url: 'https://jp.mercari.com/'},
+  { title: '乐天市场', url: 'https://rakuten.co.jp' },
   { title: '淘宝', url: 'https://taobao.com', icon: <SiTaobao /> },
 ]
 
