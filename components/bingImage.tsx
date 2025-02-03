@@ -6,6 +6,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export function BingImage() {
   const [imageUrl, setImageUrl] = useState<string | null>(null);
+  const [copyrightLink, setImageCopyRightLink] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchBingImage = async () => {
@@ -15,6 +16,7 @@ export function BingImage() {
         if (data.images && data.images.length > 0) {
           const bingUrl = `https://www.bing.com${data.images[0].url}`;
           setImageUrl(bingUrl);
+          setImageCopyRightLink(data.images[0].copyrightlink);
         }
       } catch (error) {
         console.error("Error fetching Bing image:", error);
@@ -32,6 +34,11 @@ export function BingImage() {
           alt="Bing Daily Background"
           fill
           className="h-full w-full rounded-md object-cover"
+          onClick={() => {
+            if (copyrightLink) {
+              window.open(copyrightLink, "_blank");
+            }
+          }}
         />
       ) : (
         <div className="h-full w-full flex items-center justify-center text-muted-foreground">
