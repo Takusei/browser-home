@@ -23,6 +23,7 @@ const comicItems = [
   { title: 'ColaManga', url: 'https://colamanga.com' },
   { title: '漫画柜', url: 'https://www.manhuagui.com/user/book/shelf' },
   { title: '动漫之家', url: 'https://manhua.idmzj.com/' },
+  { title: 'Jmanga', url: 'https://jmanga.se/home/' },
   { title: 'Webtoon', url: 'https://www.webtoons.com' },
   { title: 'Komiic', url: 'https://komiic.com/' },
   { title: 'MangaDex', url: 'https://mangadex.org' },
