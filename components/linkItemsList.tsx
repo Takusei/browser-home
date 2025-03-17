@@ -17,7 +17,7 @@ const getFaviconUrl = (url: string) => {
   try {
     const domain = new URL(url).hostname;
     return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`; // Google favicon service
-  } catch (error) {
+  } catch {
     return ""; // Return empty if URL is invalid
   }
 };
