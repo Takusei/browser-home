@@ -8,22 +8,24 @@ import {  SiGmail, SiTaobao } from "react-icons/si";
 
 const googleItems = [
   { title: 'Google', url: 'https://google.com' },
-  { title: 'Map', url: 'https://maps.google.com' },
   { title: 'Leetcode', url: 'https://leetcode.cn/problemset/' },
   { title: 'GitHub', url: 'https://github.com/Takusei' },
+  { title: 'Notion', url: 'https://www.notion.so/The-Job-Application-Tracker-Interview-Preparation-8f3046d70c87497da3238a3878a427d6' },
+  { title: 'ChatGPT', url: 'https://chat.openai.com/' },
 ]
 
 const socialItems = [
   { title: 'Gmail', url: 'https://gmail.com', icon: <SiGmail /> },
   { title: 'LinkedIn', url: 'https://linkedin.com'},
   { title: 'QQ-Mail', url: 'https://mail.qq.com' },
+  { title: 'Map', url: 'https://maps.google.com' },
 ]
 
 const comicItems = [
   { title: 'ColaManga', url: 'https://colamanga.com' },
   { title: '漫画柜', url: 'https://www.manhuagui.com/user/book/shelf' },
-  { title: '动漫之家', url: 'https://manhua.idmzj.com/' },
   { title: 'Jmanga', url: 'https://jmanga.se/home/' },
+  { title: '动漫之家', url: 'https://manhua.idmzj.com/' },
   { title: 'Webtoon', url: 'https://www.webtoons.com' },
   { title: 'Komiic', url: 'https://komiic.com/' },
   { title: 'MangaDex', url: 'https://mangadex.org' },
