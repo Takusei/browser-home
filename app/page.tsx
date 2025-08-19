@@ -19,6 +19,7 @@ const socialItems = [
   { title: 'LinkedIn', url: 'https://linkedin.com'},
   { title: 'QQ-Mail', url: 'https://mail.qq.com' },
   { title: 'Map', url: 'https://maps.google.com' },
+  { title: 'Suumo', url: 'https://suumo.jp/map/tokyo/sc_shinagawa/'},
 ]
 
 const comicItems = [
