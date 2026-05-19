@@ -6,7 +6,8 @@ const GoogleSearch = () => {
   const [query, setQuery] = useState("");
   const [copyright, setImageCopyright] = useState<string | null>(null);
 
-  const handleSearch = () => {
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
     const currQuery = query.trim();
     window.open(`https://www.google.com/search?q=${encodeURIComponent(currQuery)}`, "_blank");
   };
