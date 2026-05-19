@@ -6,11 +6,7 @@ const GoogleSearch = () => {
   const [query, setQuery] = useState("");
   const [copyright, setImageCopyright] = useState<string | null>(null);
 
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    const currQuery = query.trim();
-    window.open(`https://www.google.com/search?q=${encodeURIComponent(currQuery)}`, "_blank");
-  };
+
 
   useEffect(() => {
     const fetchBingCopyright = async () => {
@@ -30,9 +26,10 @@ const GoogleSearch = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full">
-      <form onSubmit={handleSearch} className="flex items-center gap-4 w-full">
+      <form action="https://www.google.com/search" method="GET" target="_blank" className="flex items-center gap-4 w-full">
         <Input
           type="text"
+          name="q"
           placeholder={copyright || "Search Google"}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
