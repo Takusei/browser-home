@@ -10,13 +10,13 @@ const googleItems = [
   { title: 'Google', url: 'https://google.com' },
   { title: 'Leetcode', url: 'https://leetcode.cn/problemset/' },
   { title: 'GitHub', url: 'https://github.com/Takusei' },
-  { title: 'Notion', url: 'https://www.notion.so/The-Job-Application-Tracker-Interview-Preparation-8f3046d70c87497da3238a3878a427d6' },
+  { title: 'Notion', url: 'https://app.notion.com/p/The-Job-Application-Tracker-Interview-Preparation-29aadb1f36d380079b2ed68c4bf5c0be' },
   { title: 'ChatGPT', url: 'https://chat.openai.com/' },
 ]
 
 const socialItems = [
   { title: 'Gmail', url: 'https://gmail.com', icon: <SiGmail /> },
-  { title: 'LinkedIn', url: 'https://linkedin.com'},
+  { title: 'LinkedIn', url: 'https://www.linkedin.com/notifications/'},
   { title: 'QQ-Mail', url: 'https://mail.qq.com' },
   { title: 'Map', url: 'https://maps.google.com' },
   { title: 'Suumo', url: 'https://suumo.jp/map/tokyo/sc_shinagawa/'},
@@ -25,7 +25,6 @@ const socialItems = [
 const comicItems = [
   { title: 'ColaManga', url: 'https://colamanga.com' },
   { title: '漫画柜', url: 'https://www.manhuagui.com/user/book/shelf' },
-  { title: 'Jmanga', url: 'https://jmanga.se/home/' },
   { title: 'Zero漫画', url: 'https://zerobyw.github.io/' },
   { title: 'Webtoon', url: 'https://www.webtoons.com' },
   { title: 'Komiic', url: 'https://komiic.com/' },
